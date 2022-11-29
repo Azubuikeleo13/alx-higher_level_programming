@@ -10,7 +10,7 @@ def fizzbuzz():
             i = 'Fizz'
         elif i%5 == 0:
             i = 'Buzz'
-       else:
+        else:
             print(i, end=' ')
             continue
 
