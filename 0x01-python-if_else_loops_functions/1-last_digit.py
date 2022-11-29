@@ -11,8 +11,8 @@ if number < 0:
     num3 *= -1
 
 if num3 > 5:
-    print(f'Last digit of {number} is {num3} and is greater than 5')
+    print(f'Last digit of {number:d} is {num3:d} and is greater than 5')
 elif num3 < 6 and num3 != 0:
-    print(f'Last digit of {number} is {num3} and is less than 6 and not 0')
+    print(f'Last digit of {number:d} is {num3:d} and is less than 6 and not 0')
 else:
-    print(f'Last digit of {number} is {num3} and is 0')
+    print(f'Last digit of {number:d} is {num3:d} and is 0')
