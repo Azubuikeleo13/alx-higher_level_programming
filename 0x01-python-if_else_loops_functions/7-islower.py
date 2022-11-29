@@ -3,7 +3,7 @@
 def islower(c):
     chr_num = ord(c)
 
-    if chr_num < 97 or chr_num > 122:
-        print(False)
+    if chr_num < 97 and chr_num > 122:
+        return False
     else:
-        print(True)
+        return True
