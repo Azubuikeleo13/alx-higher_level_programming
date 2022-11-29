@@ -2,9 +2,6 @@
 
 def print_last_digit(number):
 
-    number = str(number)
+    num = abs(number % 10)
 
-    for i in number:
-        continue
-
-    return (i)
+    return (num)
