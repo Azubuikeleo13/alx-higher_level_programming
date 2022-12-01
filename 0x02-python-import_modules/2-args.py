@@ -6,7 +6,7 @@ if __name__ == '__main__':
 
     no_arg = len(sys.argv) - 1
 
-    if no_arg == 0:
+    if no_arg <= 0:
         print('{} arguments.'.format(no_arg))
     else:
         print('{} arguments:'.format(no_arg))
