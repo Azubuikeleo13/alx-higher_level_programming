@@ -2,15 +2,14 @@
 
 def best_score(a_dictionary):
 
-    if not isinstance(a_dictionary, dict) or len(a_dictionary) == 0:
-        return None
+    if a_dictionary is None:
+        return
 
-    ret = list(a_dictionary.keys())[0]
-    big = a_dictionary[ret]
+    bst = 0
 
-    for k, v in a_dictionary.items():
-        if v > big:
-            big = v
-            ret = k
+    for i in a_dictionary.keys():
+        if a_dictionary.get(i) > bst:
+            bst = a_dictionary.get(i)
+            nam = i
 
-    return (ret)
+    return nam
