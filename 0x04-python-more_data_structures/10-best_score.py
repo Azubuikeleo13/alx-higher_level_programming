@@ -5,8 +5,11 @@ def best_score(a_dictionary):
     if a_dictionary == None:
         return None
 
+    bst = 0
+
     for i in a_dictionary.keys():
         if a_dictionary.get(i) > bst:
+            bst = a_dictionary.get(i)
             nam = i
 
     return nam
