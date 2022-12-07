@@ -22,6 +22,6 @@ def weight_average(my_list=[]):
         for j in range(1, len(i)):
             wei += i[j]
 
-    aver = summ / wei
+    aver = float(summ / wei)
 
     return aver
