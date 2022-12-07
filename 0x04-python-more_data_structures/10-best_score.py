@@ -5,12 +5,12 @@ def best_score(a_dictionary):
     if a_dictionary is None:
         return None
 
-    dictt = list(a_dictionary.values())
-    bst = dictt[0]
+    ret = list(a_dictionary.keys())[0]
+    big = a_dictionary[ret]
 
-    for i in a_dictionary.keys():
-        if a_dictionary.get(i) > bst:
-            bst = a_dictionary.get(i)
-            nam = i
+    for k, v in a_dictionary.items():
+        if v > big:
+            big = v
+            ret = k
 
-    return nam
+    return (ret)
