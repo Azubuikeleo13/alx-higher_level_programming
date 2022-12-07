@@ -2,7 +2,7 @@
 
 def print_sorted_dictionary(a_dictionary):
 
-    kys = list(a_dictionary.keys())
+    kys = sorted(a_dictionary)
     kys.sort()
 
 
