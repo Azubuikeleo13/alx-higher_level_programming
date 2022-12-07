@@ -11,7 +11,7 @@ def weight_average(my_list=[]):
         prd = 1
 
         for j in i:
-           prd *= j
+            prd *= j
 
         new_ls.append(prd)
 
